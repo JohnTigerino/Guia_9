@@ -1,0 +1,78 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+// Variables
+$padding-top-body: 60px;
+$font-size-h1: 3em;
+$font-size-h2: 1.2em;
+$font-size-p: 1.1em;
+$line-height-headings: 1;
+$line-height-p: 1.7em;
+$color-text-muted: #777;
+$color-logo: #fff;
+$logo-spacing: -1px;
+
+// Estilos generales
+body {
+    padding-top: $padding-top-body;
+}
+
+section {
+    overflow: auto;
+}
+
+textarea {
+    resize: vertical;
+}
+
+// Estilos centrados
+.center {
+    text-align: center;
+
+    h1 {
+        margin-bottom: 10px;
+    }
+}
+
+// Tipografía
+h1, h2, h3, h4, h5, h6 {
+    line-height: $line-height-headings;
+}
+
+h1 {
+    font-size: $font-size-h1;
+    letter-spacing: -2px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+h2 {
+    font-size: $font-size-h2;
+    letter-spacing: -1px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: normal;
+    color: $color-text-muted;
+}
+
+p {
+    font-size: $font-size-p;
+    line-height: $line-height-p;
+}
+
+// Header
+#logo {
+    float: left;
+    margin-right: 10px;
+    font-size: 1.7em;
+    color: $color-logo;
+    text-transform: uppercase;
+    letter-spacing: $logo-spacing;
+    padding-top: 9px;
+    font-weight: bold;
+
+    &:hover {
+        color: $color-logo;
+        text-decoration: none;
+    }
+}
